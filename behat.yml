@@ -1,0 +1,11 @@
+# behat.yml
+
+default:
+    autoload:
+        - '%paths.base%/kata/behat/context'
+    suites:
+        default:
+            paths:
+            - '%paths.base%/kata/behat/features'
+            contexts:
+            - Kata\Behat\Context\FeatureContext
